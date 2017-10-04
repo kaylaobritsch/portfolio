@@ -1,0 +1,47 @@
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+nav {
+  z-index: 2000;
+}
+
+.box-fade {
+  background-color: rgba(0,0,0,0);
+
+  transition: all .4s linear;
+}
+
+.hover-box:hover .box-fade {
+  background-color: rgba(0,0,0,.5);
+
+  min-height: 85%;
+  width: 85%;
+}
+
+.hover-box-img {
+  transition: all .3s linear;
+}
+
+.hover-box:hover .hover-box-img {
+  transform: scale(1.1);
+}
+
+.hover-box-caption {
+  bottom: 8em;
+  color: white;
+  opacity: 0;
+  z-index: 1001;
+
+  transition: all .4s ease-in;
+}
+
+.hover-box:hover .hover-box-caption {
+  bottom: 2em;
+  opacity: 1;
+}
+
+.hover-box-title {
+  font-weight: 300;
+  text-transform: uppercase;
+}
