@@ -65,7 +65,8 @@ h1 {
   font-weight: 300;
 }
 
-.banner {
+.banner-text {
+  padding-top: 75%;
   color: #fff;
 }
 
