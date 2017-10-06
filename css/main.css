@@ -1,9 +1,38 @@
 html {
   font-family: 'Lato', sans-serif;
+  overflow: hidden;
+}
+
+body .parallax {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+
+  -webkit-perspective: 1px;
+  perspective: 1px;
+}
+
+.parallax-group {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.back {
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
+
+  position: relative;
+  top: calc(((100vh - 56.25vw) / 4) * -2);
+}
+
+.front {
+  position: relative;
+  z-index: 2;
 }
 
 nav {
-  z-index: 2000;
+  z-index: 2;
 }
 
 .top-nav {
@@ -52,18 +81,9 @@ li:hover {
   color: #60BAA9;
 }
 
-.parallax {
-  background-image: url('../images/jellyfish.jpg');
-
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: none;
-  background-size: cover;
-}
-
 .side-bar {
   color: #fff;
+  letter-spacing: 5px;
   transform: rotate(-90deg);
 	transform-origin: left top 0;
 
