@@ -1,6 +1,6 @@
 html {
   font-family: 'Lato', sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body .parallax {
@@ -11,6 +11,7 @@ body .parallax {
 
   -webkit-perspective: 1px;
   perspective: 1px;
+  position: relative;
 }
 
 .parallax-group {
@@ -29,6 +30,9 @@ body .parallax {
 .front {
   position: relative;
   z-index: 2;
+
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .top-nav {
