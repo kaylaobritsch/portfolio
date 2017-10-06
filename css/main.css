@@ -1,6 +1,6 @@
 html {
   font-family: 'Lato', sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body .parallax {
@@ -24,7 +24,7 @@ body .parallax {
   transform: translateZ(-1px) scale(2);
 
   position: relative;
-  top: calc(((100vh - 56.25vw) / 4) * -2);
+  top: calc(((100vh - 42.08vw) / 4) * -2);
 }
 
 .front {
@@ -62,11 +62,15 @@ a:hover {
 
 .btn {
   color: #fff;
+  background-color: rbga(0, 0, 0, .5);
   border-color: #fff;
   border-radius: 10;
+
+  transition: all .5 linear;
 }
 
 .btn:hover {
+  background-color: rgba(0, 0, 0, 0);
   border-color: #fff;
   color: #333;
 }
