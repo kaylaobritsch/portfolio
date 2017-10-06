@@ -31,14 +31,20 @@ body .parallax {
   z-index: 2;
 }
 
-nav {
-  z-index: 2;
-}
-
 .top-nav {
+  background-color: #ccc;
   -webkit-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.33);
   -moz-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.33);
   box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.33);
+
+  z-index: 2;
+}
+
+.logo,
+.nav-list,
+.social-icons,
+small {
+  text-align: center;
 }
 
 a {
@@ -63,6 +69,10 @@ a:hover {
 
 h1 {
   font-weight: 300;
+}
+
+svg {
+  height: 15;
 }
 
 .banner-text {
@@ -161,4 +171,17 @@ small {
 
 .social svg:hover {
   fill: #ccc;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .logo,
+  small {
+    text-align: left;
+  }
+
+  .nav-list,
+  .social-icons {
+    text-align: right;
+  }
 }
