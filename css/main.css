@@ -1,6 +1,6 @@
 html {
   font-family: 'Lato', sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body .parallax {
@@ -21,11 +21,11 @@ body .parallax {
 }
 
 .back {
-  -webkit-transform: translateZ(-2px) scale(3);
-  transform: translateZ(-2px) scale(3);
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
 
   position: relative;
-  top: calc(((100vh - 42.08vw) / 4) * -2);
+  top: calc(((100vh - 56.25vw) / 4) * -2);
 }
 
 .front {
@@ -61,15 +61,11 @@ a:hover {
 
 .btn {
   color: #fff;
-  background-color: rbga(0, 0, 0, .5);
   border-color: #fff;
   border-radius: 10;
-
-  transition: all .5 linear;
 }
 
 .btn:hover {
-  background-color: rgba(0, 0, 0, 0);
   border-color: #fff;
   color: #333;
 }
