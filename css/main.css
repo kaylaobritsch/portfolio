@@ -7,6 +7,7 @@ body .parallax {
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
+  perspective-origin-x: 100%;
   -webkit-overflow-scrolling: touch;
 
   -webkit-perspective: 1px;
@@ -20,8 +21,8 @@ body .parallax {
 }
 
 .back {
-  -webkit-transform: translateZ(-1px) scale(2);
-  transform: translateZ(-1px) scale(2);
+  -webkit-transform: translateZ(-2px) scale(3);
+  transform: translateZ(-2px) scale(3);
 
   position: relative;
   top: calc(((100vh - 42.08vw) / 4) * -2);
@@ -44,11 +45,9 @@ body .parallax {
   z-index: 2;
 }
 
-.logo,
-.nav-list,
 .social-icons,
 small {
-  text-align: center;
+  text-align: left;
 }
 
 a {
@@ -79,10 +78,6 @@ h1 {
   font-weight: 300;
 }
 
-svg {
-  height: 15;
-}
-
 .banner-text {
   color: #fff;
 
@@ -102,6 +97,8 @@ li:hover {
 }
 
 .side-bar {
+  display: none;
+
   color: #fff;
   letter-spacing: 5px;
   transform: rotate(-90deg);
@@ -165,6 +162,18 @@ li:hover {
   background-color: #666;
 }
 
+.intro-section {
+  background-color: #222222;
+}
+
+.design-section {
+  background-color: #222222;
+}
+
+.selfie {
+  max-width: 60%;
+}
+
 footer {
   background-color: #000;
 }
@@ -181,15 +190,20 @@ small {
   fill: #ccc;
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 38em) {
 
-  .logo,
   small {
     text-align: left;
   }
 
-  .nav-list,
   .social-icons {
     text-align: right;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  .selfie {
+    max-width: 100%;
   }
 }
