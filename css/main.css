@@ -3,6 +3,8 @@ html {
   overflow-x: hidden;
 }
 
+/* Add parallax to the banner image */
+
 body .parallax {
   height: 100vh;
   overflow-y: auto;
@@ -37,37 +39,43 @@ body .parallax {
 }
 
 .top-nav {
-  background-color: #ccc;
-  -webkit-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.33);
-  -moz-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.33);
-  box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.33);
+  background-color: #fff;
+  -webkit-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.1);
 
   z-index: 2;
 }
 
-.social-icons,
-small {
-  text-align: left;
-}
-
 a {
-  color: #fff;
+  color: #ccc;
   text-decoration: none;
 }
 
+.nav-list a {
+  filter: blur(.7px);
+
+  transition: all .25s linear;
+}
+
+a.focus {
+  color: #666;
+  filter: blur(0);
+}
+
 a:hover {
-  color: #333;
+  color: #666;
+  filter: blur(0);
 }
 
-.btn {
-  color: #fff;
-  border-color: #fff;
-  border-radius: 10;
+.logo {
+  filter: blur(0);
+
+  transition: all .25s linear;
 }
 
-.btn:hover {
-  border-color: #fff;
-  color: #333;
+.logo:hover svg {
+  fill: #666;
 }
 
 h1 {
@@ -78,18 +86,6 @@ h1 {
   color: #fff;
 
   z-index: 1000;
-}
-
-.top-space {
-  height: 15rem;
-}
-
-.top-space-big {
-  height: 40rem;
-}
-
-li:hover {
-  color: #60BAA9;
 }
 
 .side-bar {
@@ -104,19 +100,16 @@ li:hover {
   left: .5rem;
 }
 
-.hover-box-section {
-  margin: 0;
-  background-color: #222;
-}
+/* Hover box */
 
 .box-fade {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(255,255,255,0);
 
   transition: all .4s linear;
 }
 
 .hover-box:hover .box-fade {
-  background-color: rgba(0,0,0,.75);
+  background-color: rgba(255,255,255,.8);
 
   min-height: 85%;
   width: 85%;
@@ -127,12 +120,12 @@ li:hover {
 }
 
 .hover-box:hover .hover-box-img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .hover-box-caption {
   bottom: 8em;
-  color: #fff;
+  color: #666;
   opacity: 0;
   z-index: 1001;
 
@@ -144,34 +137,32 @@ li:hover {
   opacity: 1;
 }
 
-.hover-box:hover a .web {
-  color: red;
-}
-
 .hover-box-title {
   font-weight: 300;
   text-transform: uppercase;
 }
 
+.hover-box-section {
+  margin: 0;
+  background-color: #fff;
+}
+
 .about-section {
-  color: #fff;
-  background-color: #666;
-}
-
-.intro-section {
-  background-color: #222222;
-}
-
-.design-section {
-  background-color: #222222;
+  color: #666;
+  background-color: #eee;
 }
 
 .selfie {
   max-width: 60%;
 }
 
+.social-icons,
+small {
+  text-align: left;
+}
+
 footer {
-  background-color: #000;
+  background-color: #fff;
 }
 
 small {
@@ -186,6 +177,26 @@ small {
   fill: #ccc;
 }
 
+/* Case Study Page */
+
+.intro-section {
+  color: #666;
+  background-color: #eee;
+}
+
+.design-section {
+  color: #666;
+  background-color: #fff;
+}
+
+.text-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.typeface-bariol {
+  f
+}
+
 @media only screen and (min-width: 38em) {
 
   small {
@@ -195,6 +206,12 @@ small {
   .social-icons {
     text-align: right;
   }
+
+  .text-scroll {
+    overflow: auto;
+    height: 100vh;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {

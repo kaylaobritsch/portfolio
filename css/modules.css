@@ -78,7 +78,8 @@ img {
   border: 0;
 }
 
-.img-flex {
+.img-flex,
+.img-flex img {
   display: block;
   width: 100%;
 }
@@ -247,6 +248,11 @@ svg.img-flex {
   width: 18px;
 }
 
+.i-20, .i--20 {
+  height: 20px;
+  width: 20px;
+}
+
 .i-24, .i--24 {
   height: 24px;
   width: 24px;
@@ -323,6 +329,7 @@ svg.img-flex {
   width: 1px;
   border: 0;
   clip: rect(0 0 0 0);
+  clip-path: inset(50%);
 }
 
 .visually-hidden.focusable:active, .visually-hidden.focusable:focus {
@@ -332,6 +339,7 @@ svg.img-flex {
   position: static;
   width: auto;
   clip: auto;
+  clip-path: none;
 }
 
 .invisible {
@@ -384,8 +392,10 @@ svg.img-flex {
 
 .no-auto-margins,
 .not-centered {
-  margin-left: 0;
-  margin-right: 0;
+  /* stylelint-disable declaration-no-important */
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  /* stylelint-enable */
 }
 
 .center-content,
@@ -404,6 +414,21 @@ svg.img-flex {
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
+  -webkit-flex-direction: column wrap;
+  -ms-flex-direction: column wrap;
+  flex-flow: column wrap;
+}
+
+.center-content-start,
+.center-content-vertical-start,
+.center-contents-start,
+.center-contents-vertical-start {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-flex-direction: column wrap;
   -ms-flex-direction: column wrap;
   flex-flow: column wrap;
@@ -581,6 +606,21 @@ svg.img-flex {
 
 .height-full, .h-1 {
   height: 100%;
+}
+
+.height-win-quarter, .h-w-1-4 {
+  height: 25vh;
+  max-height: 46em;
+}
+
+.height-win-half, .h-w-1-2 {
+  height: 50vh;
+  max-height: 46em;
+}
+
+.height-win-full, .h-w-1 {
+  height: 100vh;
+  max-height: 46em;
 }
 
 ul {
@@ -1114,16 +1154,45 @@ a:focus, [tabindex="0"]:focus {
   visibility: hidden;
 }
 
+.page-break-before {
+  page-break-before: always;
+}
+
+.page-break-after {
+  page-break-after: always;
+}
+
+.no-page-break-inside {
+  page-break-inside: avoid;
+}
+
 @media print {
 
+  /* stylelint-disable declaration-no-important */
+
   .no-print {
-    display: none;
-    visibility: hidden;
+    display: none !important;
+    visibility: hidden !important;
   }
 
-  .print-only {
-    display: block;
-    visibility: visible;
+  .print-only,
+  .force-print {
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  /* stylelint-enable */
+
+  .visually-hidden.force-print {
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    position: static;
+    width: auto;
+    border: 0;
+    clip: initial;
+    clip-path: none;
   }
 
   /*
@@ -1155,7 +1224,9 @@ a:focus, [tabindex="0"]:focus {
   }
 
   a[href^="#"]::after,
-  a[href^="javascript:"]::after {
+  a[href^="javascript:"]::after,
+  a.no-print-href::after,
+  a.href-no-print::after {
     content: "";
   }
 
