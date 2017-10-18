@@ -16,8 +16,8 @@
   <ul class="skip-links">
     <li><a href="{{site.baseurl}}/#main">Jump to Main Content</a></li>
     <li><a href="{{site.baseurl}}/#nav">Jump to Navigation</a></li>
-    <li><a href="{{site.baseurl}}/#portfolio">Jump to Portfolio</a></li>
-    <li><a href="{{site.baseurl}}/#about">Jump to About Me</a></li>
+    <li><a href="{{site.baseurl}}{{page.skip-link-1}}">{{page.skip-link-title-1}}</a></li>
+    <li><a href="{{site.baseurl}}{{page.skip-link-2}}">{{page.skip-link-title-2}}</a></li>
   </ul>
 
   <header role="banner">
@@ -47,7 +47,21 @@
     </nav>
   </header>
 
+  <div class="parallax parallax-group">
+    <div class="wrapper relative">
+      <img class="back img-flex" src="{{site.baseurl}}{{page.banner-image}}" alt="kayla banner">
+      <div class="banner-text absolute pin-center pad-t-2 w-1">
+        <h1 class="front text-center tena">{{page.banner-header}}</h1>
+      </div>
+    </div>
+
+  <main role="main" id="main">
+
   {{content}}
+
+  </div>
+
+  </main>
 
   <footer class="grid grid-middle">
     <div class="wrapper gutter">

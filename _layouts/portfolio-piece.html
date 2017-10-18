@@ -1,0 +1,61 @@
+---
+layout: default
+title: {{page.title}}
+
+skip-link-1: /#design
+skip-link-2: /#footer
+skip-link-title-1: Jump to Design Process
+skip-link-title-2: Jump to Footer
+
+banner-image: {{page.banner-image}}
+banner-header: {{page.banner-header}}
+---
+
+<section class="front intro-section wrapper">
+  <p class="max-length pad-t push-0 gutter">{{page.opening-text}}</p>
+  <p class="max-length pad-t pad-b-2 push-0 gutter">{{page.opening-text-2}}</p>
+</section>
+
+<section class="front design-section wrapper pad-t pad-b-2" id="design">
+  <div class="grid grid-middle">
+    <div class="left image-fixed unit xs-1 s-1 m-1-2 l-1-2 gutter">
+      <img class="img-flex pad-t gutter-2" src="{{site.baseurl}}{{page.sketch-1}}" alt="future skin sketch">
+      <img class="img-flex pad-t gutter-2" src="{{site.baseurl}}{{page.sketch-2}}" alt="future skin sketch">
+    </div>
+    <div class="text-scroll unit xs-1 s-1 m-1-2 l-1-2">
+      <div class="gutter-2">
+        <h2>Visual Design</h2>
+        <img class="img-flex pad-b-2" src="{{site.baseurl}}{{page.final-image}}" alt="future skin logo">
+
+        <h3>Typography</h3>
+        <p>{{page.type-design}}</p>
+        <img class="img-flex pad-b-2" src="{{site.baseurl}}{{page.type-image}}" alt="future skin typography">
+
+        <div>
+          <h3>Colours</h3>
+          <p>{{page.colour-design}}</p>
+
+          <div class="grid grid-middle push">
+            <svg class="unit xs-1 s-1 m-1-2 l-1-4" height="100" width="100">
+              <circle cx="50" cy="50" r="30" fill="{{page.fill-1}}" />
+            </svg>
+
+            <div class="micro unit xs-1 s-1 m-1-2 l-1-4">
+              <p class="push-0">{{page.colour-type}}</p>
+              <p class="push-0">{{page.colour-value-1}}</p>
+            </div>
+
+            <svg class="unit xs-1 s-1 m-1-2 l-1-4" height="100" width="100">
+              <circle cx="50" cy="50" r="30" fill="{{page.fill-2}}" />
+            </svg>
+
+            <div class="micro unit xs-1 s-1 m-1-2 l-1-4">
+              <p class="push-0">{{page.colour-type}}</p>
+              <p class="push-0">{{page.colour-value-2}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
