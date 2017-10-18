@@ -52,7 +52,7 @@ a {
   transition: all .25s linear;
 }
 
-a.focus {
+a.current {
   color: #666;
   filter: blur(0);
 }
