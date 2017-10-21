@@ -13,15 +13,15 @@
   <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
 </head>
 
-<body>
-  <ul role="main" id="main" itemref="data-author" itemscope itemtype="https://schema.org/Website" class="skip-links">
+<body id="main" itemref="data-author" itemscope itemtype="https://schema.org/Website">
+  <ul role="navigation">
     <li><a itemprop="url" href="{{site.baseurl}}/#main">Jump to Main Content</a></li>
     <li><a itemprop="url" href="{{site.baseurl}}/#nav">Jump to Navigation</a></li>
     <li><a itemprop="url" href="{{site.baseurl}}{{page.skip-link-1}}">{{page.skip-link-title-1}}</a></li>
     <li><a itemprop="url" href="{{site.baseurl}}{{page.skip-link-2}}">{{page.skip-link-title-2}}</a></li>
   </ul>
 
-  <header role="main" id="main" itemref="data-author" itemscope itemtype="https://schema.org/Website" role="banner">
+  <header role="banner">
     <nav class="top-nav fixed w-1 push-0 gutter pad-t-1-2 pad-b-1-2" id="nav" role="navigation">
       <div class="grid grid-middle wrapper push-0">
         <div class="text-left unit xs-1-4">
@@ -43,15 +43,15 @@
     </nav>
   </header>
 
-  <div role="main" id="main" itemref="data-author" itemscope itemtype="https://schema.org/Website" class="parallax parallax-group">
+  <div role="main" id="main" class="parallax parallax-group">
     <div class="wrapper relative">
-      <img itemprop="image" class="back img-flex" src="{{site.baseurl}}{{page.banner-image}}" alt="kayla banner">
+      <img itemprop="image" class="back img-flex" src="{{site.baseurl}}{{page.banner-image}}" alt="Kayla Portfolio Banner">
       <div class="banner-text absolute pin-center pad-t-2 w-1">
         <h1 itemprop="name" class="front text-center tena">{{page.banner-header}}</h1>
       </div>
     </div>
 
-  <main role="main" id="main" itemref="data-author" itemscope itemtype="https://schema.org/Website">
+  <main>
 
   {{content}}
 
@@ -64,7 +64,7 @@
       <div class="pad-t pad-b unit xs-1 s-1 m-1-2 l-1-2">
         <p role="contentinfo" class="milli">© <span itemprop="name">Kayla Obritsch</span> 2017</p>
         <a itemprop="email" class="milli" href="mailto:mailto:design@kaylaobritsch.ca">design@kaylaobritsch.ca</a>
-        <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" class="milli">
+        <p itemprop="address" class="milli" itemscope itemtype="https://schema.org/PostalAddress">
           <span itemprop="addressLocality">Ottawa,</span>
           <span itemprop="addressRegion">Ontario,</span>
           <span itemprop="addressCountry">Canada</span>
