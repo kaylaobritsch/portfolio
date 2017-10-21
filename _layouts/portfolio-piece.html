@@ -1,6 +1,7 @@
 ---
 layout: default
 title: {{page.title}}
+meta: {{page.meta}}
 
 skip-link-1: /#design
 skip-link-2: /#footer
@@ -13,23 +14,22 @@ banner-header: {{page.banner-header}}
 
 <section class="front intro-section wrapper">
   <p class="max-length pad-t push-0 gutter">{{page.opening-text}}</p>
-  <p class="max-length pad-t pad-b-2 push-0 gutter">{{page.opening-text-2}}</p>
 </section>
 
 <section class="front design-section wrapper pad-t pad-b-2" id="design">
   <div class="grid grid-middle">
     <div class="left image-fixed unit xs-1 s-1 m-1-2 l-1-2 gutter">
-      <img class="img-flex pad-t gutter-2" src="{{site.baseurl}}{{page.sketch-1}}" alt="future skin sketch">
-      <img class="img-flex pad-t gutter-2" src="{{site.baseurl}}{{page.sketch-2}}" alt="future skin sketch">
+      <img itemprop="image" class="img-flex pad-t gutter-2" src="{{site.baseurl}}{{page.sketch-1}}" alt="Future Skin Sketch">
+      <img itemprop="image" class="img-flex pad-t gutter-2" src="{{site.baseurl}}{{page.sketch-2}}" alt="Future Skin Sketch 2">
     </div>
     <div class="text-scroll unit xs-1 s-1 m-1-2 l-1-2">
       <div class="gutter-2">
         <h2>Visual Design</h2>
-        <img class="img-flex pad-b-2" src="{{site.baseurl}}{{page.final-image}}" alt="future skin logo">
+        <img itemprop="image" class="img-flex pad-b-2" src="{{site.baseurl}}{{page.final-image}}" alt="Future Skin Logo">
 
         <h3>Typography</h3>
         <p>{{page.type-design}}</p>
-        <img class="img-flex pad-b-2" src="{{site.baseurl}}{{page.type-image}}" alt="future skin typography">
+        <img itemprop="image" class="img-flex pad-b-2" src="{{site.baseurl}}{{page.type-image}}" alt="Future Skin Typography">
 
         <div>
           <h3>Colours</h3>
@@ -55,6 +55,10 @@ banner-header: {{page.banner-header}}
             </div>
           </div>
         </div>
+
+        <h3>{{page.icon-title}}</h3>
+        <p>{{page.icons}}</p>
+
       </div>
     </div>
   </div>

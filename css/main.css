@@ -67,7 +67,7 @@ a:hover {
   transition: all .25s linear;
 }
 
-.logo:hover svg {
+.logo:hover a svg {
   fill: #666;
 }
 
