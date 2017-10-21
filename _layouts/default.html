@@ -13,8 +13,8 @@
   <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
 </head>
 
-<body id="main" itemref="data-author" itemscope itemtype="https://schema.org/Website">
-  <ul role="navigation">
+<body itemref="data-author" itemscope itemtype="https://schema.org/Website">
+  <ul role="navigation" class="skip-links">
     <li><a itemprop="url" href="{{site.baseurl}}/#main">Jump to Main Content</a></li>
     <li><a itemprop="url" href="{{site.baseurl}}/#nav">Jump to Navigation</a></li>
     <li><a itemprop="url" href="{{site.baseurl}}{{page.skip-link-1}}">{{page.skip-link-title-1}}</a></li>
@@ -43,7 +43,7 @@
     </nav>
   </header>
 
-  <div role="main" id="main" class="parallax parallax-group">
+  <div class="parallax parallax-group">
     <div class="wrapper relative">
       <img itemprop="image" class="back img-flex" src="{{site.baseurl}}{{page.banner-image}}" alt="Kayla Portfolio Banner">
       <div class="banner-text absolute pin-center pad-t-2 w-1">
@@ -51,7 +51,7 @@
       </div>
     </div>
 
-  <main>
+  <main id="main">
 
   {{content}}
 
