@@ -24,7 +24,7 @@ body .parallax {
   -webkit-transform: translateZ(-1px) scale(2);
   transform: translateZ(-1px) scale(2);
   position: relative;
-  top: calc(((100vh - 56.25vw) / 4) * -2);
+  top: calc(((100vh - 50.10vw) / 4) * -2);
 }
 
 .front {
@@ -67,7 +67,7 @@ a:hover {
   transition: all .25s linear;
 }
 
-.logo:hover a svg {
+.logo:hover svg {
   fill: #666;
 }
 

@@ -1,0 +1,3 @@
+Sitemap: https://example.ca/sitemap.xml
+
+User-Agent: *
