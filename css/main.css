@@ -209,6 +209,11 @@ small {
   display: none;
 }
 
+.process-section {
+  background-color: var(--color-light-grey);
+  height: 100vh;
+}
+
 @media only screen and (min-width: 38em) {
 
   small {

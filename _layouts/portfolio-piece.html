@@ -3,10 +3,10 @@ layout: default
 title: {{page.title}}
 meta: {{page.meta}}
 
-skip-link-1: /#design
-skip-link-2: /#footer
-skip-link-title-1: Jump to Design Process
-skip-link-title-2: Jump to Footer
+skip-link-1: #design
+skip-link-2: #footer
+skip-link-title-1: Jump to Design
+skip-link-title-2: Jump to Concept
 
 banner-image: {{page.banner-image}}
 banner-header: {{page.banner-header}}
@@ -18,18 +18,26 @@ banner-header: {{page.banner-header}}
       <p itemtype="description" class="max-length pad-t pad-b-2 gutter">{{page.opening-text}}</p>
     </div>
 
+    <div class="process-section">
+      <div class="wrapper">
+        <h2>Concept</h2>
+        <p>{{page.process}}</p>
+        <img itemprop="image" class="img-flex pad-b-2" src="{{site.baseurl}}{{page.sketch}}" alt="{{page.sketch-alt}}">
+      </div>
+    </div>
+
     <div class="front design-section wrapper pad-t pad-b-2" id="design">
       <div class="grid grid-middle">
         <div class="left image-fixed unit xs-1 s-1 m-1-2 l-1-2 gutter">
-          <img itemprop="image" class="img-flex pad-t gutter-2" src="{{site.baseurl}}{{page.sketch-1}}" alt="Future Skin Sketch">
-          <img itemprop="image" class="img-flex pad-t gutter-2" src="{{site.baseurl}}{{page.sketch-2}}" alt="Future Skin Sketch 2">
+          <img itemprop="image" class="img-flex pad-t gutter-2" src="{{site.baseurl}}{{page.mockup-1}}" alt="{{page.mockup-1-alt}}">
+          <img itemprop="image" class="img-flex pad-t gutter-2" src="{{site.baseurl}}{{page.mockup-2}}" alt="{{page.mockup-2-alt}}">
         </div>
         <div class="text-scroll unit xs-1 s-1 m-1-2 l-1-2">
           <div class="gutter-2">
             <h2>Visual Design</h2>
             <h3>{{page.icon-title}}</h3>
-            <p>{{page.icons}}</p>
-            <img itemprop="image" class="img-flex pad-b-2" src="{{site.baseurl}}{{page.final-image}}" alt="Future Skin Logo">
+            <p>{{page.icon-design}}</p>
+            <img itemprop="image" class="img-flex pad-b-2" src="{{site.baseurl}}{{page.icon-image}}" alt="{{page.icon-image-alt}}">
 
             <h3>Typography</h3>
             <p>{{page.type-design}}</p>
@@ -40,41 +48,22 @@ banner-header: {{page.banner-header}}
               <p>{{page.colour-design}}</p>
 
               <div class="grid grid-middle push">
-                <div class="micro unit xs-1 s-1 m-1 l-1">
-                  <p class="push-0">{{page.colour-type}}</p>
+                <div class="unit xs-1 s-1 m-1 l-1">
+                  <h4 class="push-0 micro">{{page.colour-type}}</h4>
                 </div>
 
-                <svg class="unit xs-1 s-1 m-1-2 l-1-4" height="100" width="100">
-                  <circle cx="50" cy="50" r="30" fill="{{page.fill-1}}" />
-                </svg>
+                {% for colour in site.data.future-skin %}
 
-                <div class="micro unit xs-1 s-1 m-1-2 l-1-4">
-                  <p class="push-0">{{page.colour-value-1}}</p>
-                </div>
+                  <svg class="unit xs-1 s-1 m-1-2 l-1-4" height="100" width="100">
+                    <circle cx="50" cy="50" r="30" fill="{{ future-skin.fill }}" />
+                  </svg>
 
-                <svg class="unit xs-1 s-1 m-1-2 l-1-4" height="100" width="100">
-                  <circle cx="50" cy="50" r="30" fill="{{page.fill-2}}" />
-                </svg>
+                  <div class="micro unit xs-1 s-1 m-1-2 l-1-4">
+                    <p class="push-0">{{ future-skin.value }}</p>
+                  </div>
 
-                <div class="micro unit xs-1 s-1 m-1-2 l-1-4">
-                  <p class="push-0">{{page.colour-value-2}}</p>
-                </div>
+                {% endfor %}
 
-                <svg class="unit xs-1 s-1 m-1-2 l-1-4" height="100" width="100">
-                  <circle cx="50" cy="50" r="30" fill="{{page.fill-3}}" />
-                </svg>
-
-                <div class="micro unit xs-1 s-1 m-1-2 l-1-4">
-                  <p class="push-0">{{page.colour-value-3}}</p>
-                </div>
-
-                <svg class="unit xs-1 s-1 m-1-2 l-1-4" height="100" width="100">
-                  <circle cx="50" cy="50" r="30" fill="{{page.fill-4}}" />
-                </svg>
-
-                <div class="micro unit xs-1 s-1 m-1-2 l-1-4">
-                  <p class="push-0">{{page.colour-value-4}}</p>
-                </div>
               </div>
             </div>
 
@@ -82,5 +71,6 @@ banner-header: {{page.banner-header}}
         </div>
       </div>
     </div>
+
   </div>
 </section>
