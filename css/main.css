@@ -214,6 +214,10 @@ small {
   height: 100vh;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 @media only screen and (min-width: 38em) {
 
   small {

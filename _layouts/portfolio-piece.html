@@ -52,18 +52,37 @@ banner-header: {{page.banner-header}}
                   <h4 class="push-0 micro">{{page.colour-type}}</h4>
                 </div>
 
-                {% for colour in site.data.future-skin %}
+                <svg class="unit xs-1 s-1 m-1-2 l-1-4" height="100" width="100">
+                  <circle cx="50" cy="50" r="30" fill="{{page.fill-1}}" />
+                </svg>
 
-                  <svg class="unit xs-1 s-1 m-1-2 l-1-4" height="100" width="100">
-                    <circle cx="50" cy="50" r="30" fill="{{ future-skin.fill }}" />
-                  </svg>
+                <div class="micro unit xs-1 s-1 m-1-2 l-1-4">
+                  <p class="push-0">{{page.colour-value-1}}</p>
+                </div>
 
-                  <div class="micro unit xs-1 s-1 m-1-2 l-1-4">
-                    <p class="push-0">{{ future-skin.value }}</p>
-                  </div>
+                <svg class="unit xs-1 s-1 m-1-2 l-1-4" height="100" width="100">
+                  <circle cx="50" cy="50" r="30" fill="{{page.fill-2}}" />
+                </svg>
 
-                {% endfor %}
+                <div class="micro unit xs-1 s-1 m-1-2 l-1-4">
+                  <p class="push-0">{{page.colour-value-2}}</p>
+                </div>
 
+                <svg class="unit xs-1 s-1 m-1-2 l-1-4 {{page.hidden}}" height="100" width="100">
+                  <circle cx="50" cy="50" r="30" fill="{{page.fill-3}}" />
+                </svg>
+
+                <div class="micro unit xs-1 s-1 m-1-2 l-1-4">
+                  <p class="push-0">{{page.colour-value-3}}</p>
+                </div>
+
+                <svg class="unit xs-1 s-1 m-1-2 l-1-4 {{page.hidden}}" height="100" width="100">
+                  <circle cx="50" cy="50" r="30" fill="{{page.fill-4}}" />
+                </svg>
+
+                <div class="micro unit xs-1 s-1 m-1-2 l-1-4">
+                  <p class="push-0">{{page.colour-value-4}}</p>
+                </div>
               </div>
             </div>
 
