@@ -33,7 +33,7 @@
         </div>
         <div class="text-right unit xs-3-4">
           <ul class="nav-list list-group-inline push-0">
-            <li><a itemprop="url" class="milli" href="{{site.baseurl}}/#portfolio">Portfolio</a></li>
+            <li><a itemprop="url" class="milli" href="{{site.baseurl}}/#portfolio" % if page.url == '/#portfolio' %} class="current" {% endif %}>Portfolio</a></li>
             <li><a itemprop="url" class="milli gutter" href="{{site.baseurl}}/#about">About</a></li>
             <li><a itemprop="url" href="mailto:design@kaylaobritsch.ca" class="milli ">Contact</a></li>
           </ul>
@@ -47,7 +47,7 @@
     <div class="relative">
       <img itemprop="image" class="back img-flex" src="{{site.baseurl}}{{page.banner-image}}" alt="Kayla Portfolio Banner">
       <div class="banner-text absolute pin-center pad-t-2 w-1">
-        <h1 itemprop="name" class="front text-center tena">{{page.banner-header}}</h1>
+        <h1 itemprop="name" class="front text-center tenamega">{{page.banner-header}}</h1>
       </div>
     </div>
 
@@ -60,26 +60,33 @@
   </main>
 
   <footer id="data-author" itemprop="author" itemscope itemtype="https://schema.org/Person" class="grid grid-middle">
-    <div class="wrapper gutter">
+    <div class="front wrapper gutter">
       <div class="pad-t pad-b unit xs-1 s-1 m-1-2 l-1-2">
-        <p role="contentinfo" class="milli">© <span itemprop="name">Kayla Obritsch</span> 2017</p>
-        <a itemprop="email" class="milli" href="mailto:mailto:design@kaylaobritsch.ca">design@kaylaobritsch.ca</a>
-        <p itemprop="address" class="milli" itemscope itemtype="https://schema.org/PostalAddress">
+        <p role="contentinfo" class="micro">© <span itemprop="name">Kayla Obritsch</span> 2017</p>
+        <a class="email-link footer-link milli" itemprop="email" class="milli" href="mailto:mailto:design@kaylaobritsch.ca">design@kaylaobritsch.ca</a>
+        <p itemprop="address" class="micro" itemscope itemtype="https://schema.org/PostalAddress">
           <span itemprop="addressLocality">Ottawa,</span>
           <span itemprop="addressRegion">Ontario,</span>
           <span itemprop="addressCountry">Canada</span>
         </p>
       </div>
       <div class="pad-t pad-b unit xs-1 s-1 m-1-2 l-1-2 social-icons">
-        <i class="behance-icon i-32 icon inline-block text-">
-          <a itemprop="url" class="social" href="https://www.instagram.com/kaylaobritsch/">
-            <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#instagram"></use></svg>
+        <i class="social-icon i-24 icon inline-block text-">
+          <a itemprop="url" class="social" href="https://instagram.com/kaylaobritsch/">
+            <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#instagram-logo"></use></svg>
           </a>
         </i>
         <div class="gutter inline-block">
-          <i class="behance-icon i-32 icon inline-block">
-            <a itemprop="url" class="social" href="https://www.behance.net/KaylaRoseO">
-              <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#behance"></use></svg>
+          <i class="social-icon i-32 icon inline-block">
+            <a itemprop="url" class="social" href="https://behance.net/KaylaRoseO">
+              <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#behance-logo"></use></svg>
+              </a>
+            </i>
+        </div>
+        <div class="inline-block">
+          <i class="social-icon i-64 icon inline-block">
+            <a itemprop="url" class="social" href="https://github.com/kaylaobritsch">
+              <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#github-logo"></use></svg>
               </a>
             </i>
         </div>

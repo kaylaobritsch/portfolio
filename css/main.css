@@ -1,5 +1,16 @@
+:root {
+  --color-primary: #c6858f;
+  --color-white: #fff;
+  --color-light-grey: #cbc4bc;
+  --color-dark-grey: #837865;
+  --color-black: #2c0e1d;
+
+  --font-primary: "Lato", sans-serif;
+}
+
 html {
-  font-family: Lato, sans-serif;
+  color: var(--color-black);
+  font-family: var(--font-primary);
   overflow-x: hidden;
 }
 
@@ -43,7 +54,7 @@ body .parallax {
 }
 
 a {
-  color: #ccc;
+  color: var(--color-light-grey);
   text-decoration: none;
 }
 
@@ -53,12 +64,12 @@ a {
 }
 
 a.current {
-  color: #666;
+  color: var(--color-primary);
   filter: blur(0);
 }
 
 a:hover {
-  color: #666;
+  color: var(--color-primary);
   filter: blur(0);
 }
 
@@ -68,7 +79,7 @@ a:hover {
 }
 
 .logo:hover svg {
-  fill: #666;
+  fill: var(--color-primary);
 }
 
 h1 {
@@ -76,13 +87,13 @@ h1 {
 }
 
 .banner-text {
-  color: #fff;
+  color: var(--color-white);
   z-index: 1000;
 }
 
 .side-bar {
   display: none;
-  color: #fff;
+  color: var(--color-white);
   letter-spacing: 5px;
   transform: rotate(-90deg);
   transform-origin: left top 0;
@@ -113,7 +124,7 @@ h1 {
 
 .hover-box-caption {
   bottom: 8em;
-  color: #666;
+  color: var(--color-black);
   opacity: 0;
   z-index: 1001;
   transition: all .4s ease-in;
@@ -131,16 +142,39 @@ h1 {
 
 .hover-box-section {
   margin: 0;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .about-section {
-  color: #666;
-  background-color: #eee;
+  color: var(--color-white);
+  background-color: var(--color-primary);
 }
 
 .selfie {
   max-width: 60%;
+}
+
+a.email-link {
+  color: var(--color-white);
+  background-image: linear-gradient(120deg, var(--color-black) 0%, var(--color-black) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.25em;
+  background-position: 0 90%;
+  transition: all 0.25s ease-in;
+}
+
+a.email-link:hover {
+  color: var(--color-primary);
+  background-size: 100% 88%;
+}
+
+a.email-link.footer-link {
+  color: var(--color-black);
+  background-image: linear-gradient(120deg, var(--color-primary) 0%, var(--color-primary) 100%);
+}
+
+a.email-link.footer-link:hover {
+  color: var(--color-white)
 }
 
 .social-icons, small {
@@ -148,31 +182,27 @@ h1 {
 }
 
 footer {
-  background-color: #fff;
+  color: var(--color-dark-grey);
+  background-color: var(--color-white);
 }
 
 small {
-  color: #666;
+  color: var(--color-dark-grey);
 }
 
 .social svg {
-  fill: #666;
+  fill: var(--color-dark-grey);
 }
 
 .social svg:hover {
-  fill: #ccc;
+  fill: var(--color-primary);
 }
 
 /* Case Study Page */
 
-.intro-section {
-  color: #666;
-  background-color: #eee;
-}
-
-.design-section {
-  color: #666;
-  background-color: #fff;
+.portfolio-info {
+  color: var(--color-dark-grey);
+  background-color: white;
 }
 
 .text-scroll::-webkit-scrollbar {
