@@ -243,19 +243,24 @@ small {
     text-align: right;
   }
 
-  .design-section {
+  .mockup-section {
     height: 100vh;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+
+    z-index: -1;
   }
 
-  .text-scroll {
+  .design {
+    background-color: var(--color-white);
+  }
+
+  .design-section {
     position: absolute;
-    overflow: auto;
-    height: 80vh;
-
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
   }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -278,6 +283,8 @@ small {
 
    margin-left: 0;
    margin-right: 0;
+
+   z-index: 1000;
  }
 
 }
