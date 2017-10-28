@@ -258,7 +258,12 @@ small {
 
   .design-section {
     position: absolute;
-    top: 0;
+    top: 0
+  }
+
+  .image-section {
+    background-color: var(--color-white);
+    margin-top: 25rem;
   }
 
 }
