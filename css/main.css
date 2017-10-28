@@ -14,6 +14,10 @@ html {
   overflow-x: hidden;
 }
 
+p {
+  color: var(--color-black);
+}
+
 /* Add parallax to the banner image */
 
 body .parallax {
@@ -221,6 +225,14 @@ small {
   visibility: hidden;
 }
 
+.logo-sticky {
+  width: 100%;
+  max-width: 36em;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media only screen and (min-width: 38em) {
 
   small {
@@ -231,8 +243,7 @@ small {
     text-align: right;
   }
 
-  .design-section,
-  .concept-section {
+  .design-section {
     height: 100vh;
   }
 
@@ -245,14 +256,6 @@ small {
     top: 50%;
     transform: translate(-50%, -50%);
   }
-
-  .mockup {
-    position: absolute;
-
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
 }
 
 @media only screen and (min-width: 60em) {
@@ -260,4 +263,21 @@ small {
   .selfie {
     max-width: 100%;
   }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .logo-sticky {
+   position: sticky;
+   top: 0;
+   left: 0;
+
+   width: 100%;
+   max-width: 13em;
+
+   margin-left: 0;
+   margin-right: 0;
+ }
+
 }
