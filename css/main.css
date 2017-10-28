@@ -46,11 +46,7 @@ body .parallax {
 }
 
 .top-nav {
-  background-color: #fff;
-  -webkit-box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .1);
-  -moz-box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .1);
-  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .1);
-  z-index: 2;
+  background-color: var(--color-white);
 }
 
 a {
@@ -84,6 +80,10 @@ a:hover {
 
 h1 {
   font-weight: 300;
+}
+
+h3 {
+  color: var(--color-primary);
 }
 
 .banner-text {
@@ -209,9 +209,12 @@ small {
   display: none;
 }
 
-.process-section {
+.concept-section {
   background-color: var(--color-light-grey);
-  height: 100vh;
+}
+
+.sketch {
+  mix-blend-mode: multiply;
 }
 
 .hidden {
@@ -228,9 +231,27 @@ small {
     text-align: right;
   }
 
-  .text-scroll {
-    overflow: auto;
+  .design-section,
+  .concept-section {
     height: 100vh;
+  }
+
+  .text-scroll {
+    position: absolute;
+    overflow: auto;
+    height: 80vh;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .mockup {
+    position: absolute;
+
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
