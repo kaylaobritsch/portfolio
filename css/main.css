@@ -214,7 +214,7 @@ small {
 }
 
 .concept-section {
-  background-color: var(--color-light-grey);
+  background-color: #eee;
 }
 
 .sketch {
@@ -226,12 +226,9 @@ small {
 }
 
 .logo-sticky {
-  width: 100%;
-  max-width: 36em;
-
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
+
 
 @media only screen and (min-width: 38em) {
 
@@ -274,22 +271,19 @@ small {
     max-width: 100%;
   }
 
-}
-
-@media only screen and (min-width: 90em) {
-
   .logo-sticky {
-   position: sticky;
-   top: 0;
-   left: 0;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    left: 0;
 
-   width: 100%;
-   max-width: 13em;
+    width: 100%;
+    max-width: 13em;
 
-   margin-left: 0;
-   margin-right: 0;
+    margin-left: 0;
+    margin-right: 0;
 
-   z-index: 1000;
+    z-index: 1000;
  }
 
 }
