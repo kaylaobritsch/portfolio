@@ -34,12 +34,12 @@ banner-header: {{page.banner-header}}
 
     <section class="relative wrapper">
       <div class="mockup-section grid grid-middle wrapper">
-        <img itemprop="image" class="unit gutter-2 xs-1 s-1 m-1-2 l-1-2 img-flex" src="{{site.baseurl}}{{page.mockup}}" alt="{{page.mockup-alt}}">
+        <img itemprop="image" class="unit gutter-2 xs-1 s-1 m-1 l-1-2 img-flex" src="{{site.baseurl}}{{page.mockup}}" alt="{{page.mockup-alt}}">
       </div>
 
       <section class="design-section grid grid-middle gutter pad-t pad-b-2">
-        <div class="unit xs-1 s-1 m-1-2 l-1-2"></div>
-        <div class="unit xs-1 s-1 m-1-2 l-1-2 design">
+        <div class="unit xs-1 s-1 m-1 l-1-2"></div>
+        <div class="unit xs-1 s-1 m-1 l-1-2 design">
           <h2>Visual Design</h2>
           <h3>{{page.icon-title}}</h3>
           <p>{{page.icon-design}}</p>
@@ -109,16 +109,8 @@ banner-header: {{page.banner-header}}
         </div>
       </section>
 
-      <section class="image-section gutter-2 pad-t">
-        <div class="wrapper">
-          <img itemprop="image" class="img-flex pad-b-2 sketch" src="{{site.baseurl}}{{page.mockup-2}}" alt="{{page.mockup-2-alt}}">
+      {{content}}
 
-          <img itemprop="image" class="img-flex pad-b-2 sketch" src="{{site.baseurl}}{{page.mockup-3}}" alt="{{page.mockup-3-alt}}">
-        </div>
-      </section>
     </section>
 
-
 </section>
-
-{{content}}
