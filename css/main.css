@@ -112,12 +112,12 @@ h3 {
 /* Hover box */
 
 .box-fade {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(0, 0, 0, .6);
   transition: all .4s linear;
 }
 
 .hover-box:hover .box-fade {
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(0, 0, 0, .4);
   min-height: 85%;
   width: 85%;
 }
@@ -132,7 +132,7 @@ h3 {
 
 .hover-box-caption {
   bottom: 8em;
-  color: var(--color-black);
+  color: var(--color-white);
   opacity: 0;
   z-index: 1001;
   transition: all .4s ease-in;
@@ -146,6 +146,10 @@ h3 {
 .hover-box-title {
   font-weight: 300;
   text-transform: uppercase;
+}
+
+.hover-box-cat {
+  color: var(--color-white);
 }
 
 .hover-box-section {
@@ -231,6 +235,11 @@ small {
 
 .logo-sticky {
   text-align: center;
+}
+
+.portfolio-nav-links {
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 
