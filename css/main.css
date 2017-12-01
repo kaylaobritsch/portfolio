@@ -105,15 +105,18 @@ h3 {
 
 .banner-whole {
   margin-top: -2rem;
+  text-align: center;
 }
 
 .banner-text {
   color: var(--color-white);
   font-family: "Bebas", sans-serif;
+  display: inline-block;
 }
 
 .banner-work {
-  line-height: 1.75rem;
+  line-height: .5em;
+  display: inline-block;
 }
 
 .work-r {
@@ -354,8 +357,7 @@ small {
   }
 
   .design-section {
-   position: absolute;
-   top: 0
+   margin-top: -100vh;
   }
 
   .image-section {
