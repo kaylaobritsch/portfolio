@@ -44,7 +44,7 @@
         </div>
         <div class="text-right unit xs-3-4">
           <ul class="nav-list list-group-inline push-0">
-            <li><a itemprop="url" class="milli" href="{{site.baseurl}}/#portfolio" {% if page.url == '/#portfolio' %} class="current" {% endif %}>Portfolio</a></li>
+            <li><a itemprop="url" class="milli" href="{{site.baseurl}}/#portfolio" {% if page.url == '/#portfolio' %} class="current" {% endif %}>Work</a></li>
             <li><a itemprop="url" class="milli gutter" href="{{site.baseurl}}/#about" {% if page.url == '/#about' %} class="current" {% endif %}>About</a></li>
             <li><a itemprop="url" href="mailto:design@kaylaobritsch.ca" class="milli ">Contact</a></li>
           </ul>
@@ -56,8 +56,15 @@
 
     <div class="embed embed-19by6 relative">
       <img itemprop="image" class="back embed-item" src="{{site.baseurl}}{{page.banner-image}}" alt="Kayla Portfolio Banner">
-      <div class="banner-text absolute pin-center pad-t-2 w-1">
-        <h1 itemprop="name" class="front text-center tenamega">{{page.banner-header}}</h1>
+      <div class="front banner-whole">
+        <div class="banner-square">
+          <div class="banner-work-text text-center">
+            <h1 itemprop="name" class="front tenamega work push-1-4 pad-t-1-4 banner-work"><p class="push-0">WO</p><br><p><span class="work-r">R</span><span>K</span></p></h1>
+          </div>
+          <div class="banner-text pad-b-1-2 gutter-1-2">
+            <h2 itemprop="name" class="banner-sub front push-0">{{page.banner-header}}</h2>
+          </div>
+        </div>
       </div>
     </div>
 

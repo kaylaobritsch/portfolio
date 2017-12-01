@@ -63,7 +63,7 @@ a {
 }
 
 .nav-list a {
-  filter: blur(.7px);
+  filter: blur(.6px);
   transition: all .25s linear;
 }
 
@@ -77,26 +77,55 @@ a:hover {
   filter: blur(0);
 }
 
-.logo {
+.logo svg {
+  fill: var(--color-primary);
   filter: blur(0);
   transition: all .25s linear;
 }
 
 .logo:hover svg {
-  fill: var(--color-primary);
+  fill: var(--color-black);
 }
 
 h1 {
   font-weight: 300;
 }
 
+.work {
+  font-weight: 600;
+}
+
+.banner-square {
+  background-color: var(--color-primary);
+}
+
 h3 {
   color: var(--color-primary);
 }
 
+.banner-whole {
+  margin-top: -2rem;
+}
+
 .banner-text {
   color: var(--color-white);
-  z-index: 1000;
+  font-family: "Bebas", sans-serif;
+}
+
+.banner-work {
+  line-height: 1.75rem;
+}
+
+.work-r {
+  margin-right: 1rem;
+}
+
+.banner-work p {
+  color: var(--color-white);
+}
+
+.banner-sub {
+  font-weight: 300;
 }
 
 .side-bar {
@@ -112,17 +141,18 @@ h3 {
 /* Hover box */
 
 .box-fade {
-  background-color: rgba(0, 0, 0, .6);
+  background-color: rgba(0, 0, 0, .7);
   transition: all .4s linear;
 }
 
 .hover-box:hover .box-fade {
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, .5);
   min-height: 85%;
   width: 85%;
 }
 
 .hover-box-img {
+  background-color: rgba(255, 255, 255, .5);
   transition: all .3s linear;
 }
 
@@ -148,10 +178,6 @@ h3 {
   text-transform: uppercase;
 }
 
-.hover-box-cat {
-  color: var(--color-white);
-}
-
 .hover-box-section {
   margin: 0;
   background-color: var(--color-white);
@@ -162,7 +188,13 @@ h3 {
   background-color: var(--color-primary);
 }
 
+.about-section h3 {
+  color: var(--color-white);
+}
+
 .selfie {
+  -webkit-clip-path: circle(33% at 50% 50%);
+  clip-path: circle(33% at 50% 50%);
   max-width: 60%;
 }
 
@@ -204,6 +236,7 @@ small {
 
 .social svg {
   fill: var(--color-dark-grey);
+  transition: all .25s linear;
 }
 
 .social svg:hover {
@@ -245,6 +278,7 @@ small {
 
 @media only screen and (min-width: 38em) {
 
+
   small {
     text-align: left;
   }
@@ -256,6 +290,36 @@ small {
 }
 
 @media only screen and (min-width: 60em) {
+
+  .banner-whole {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .banner-square {
+    background-color: rgba(198, 133, 143, .8);
+    position: relative;
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .banner-work-text {
+    margin-right: -3rem;
+    margin-top: -6rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+  }
+
+  .banner-text {
+    bottom: 0;
+    position: absolute;
+    left: 0;
+  }
 
   .selfie {
     max-width: 100%;
