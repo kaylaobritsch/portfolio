@@ -85,15 +85,11 @@ a:hover {
 }
 
 .logo:hover svg {
-  fill: var(--color-black);
+  fill: var(--color-light-grey);
 }
 
 h1 {
   font-weight: 300;
-}
-
-#triangle-banner {
-  height: 1% !important;
 }
 
 .work {
@@ -106,7 +102,14 @@ h1 {
 
 h3 {
   color: var(--color-primary);
-  font-family: var(--font-secondary);
+}
+
+#triangle-banner {
+  height: 1% !important;
+}
+
+.banner-hidden {
+  display: none;
 }
 
 .banner-whole {
@@ -150,12 +153,12 @@ h3 {
 /* Hover box */
 
 .box-fade {
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, .5);
   transition: all .4s linear;
 }
 
 .hover-box:hover .box-fade {
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .4);
   min-height: 85%;
   width: 85%;
 }
@@ -175,6 +178,10 @@ h3 {
   opacity: 0;
   z-index: 1001;
   transition: all .4s ease-in;
+}
+
+.hover-box-caption p {
+  color: var(--color-white);
 }
 
 .hover-box:hover .hover-box-caption {
@@ -286,7 +293,6 @@ small {
 
 
 @media only screen and (min-width: 38em) {
-
 
   small {
     text-align: left;

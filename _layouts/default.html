@@ -26,10 +26,10 @@
 
 <body itemref="data-author" itemscope itemtype="https://schema.org/Website">
   <ul class="skip-links">
-    <li><a itemprop="url" href="{{site.baseurl}}/#main">Jump to Main Content</a></li>
-    <li><a itemprop="url" href="{{site.baseurl}}/#nav">Jump to Navigation</a></li>
-    <li><a itemprop="url" href="{{site.baseurl}}{{page.skip-link-1}}">{{page.skip-link-title-1}}</a></li>
-    <li><a itemprop="url" href="{{site.baseurl}}{{page.skip-link-2}}">{{page.skip-link-title-2}}</a></li>
+    <li><a itemprop="url" href="#main">Jump to Main Content</a></li>
+    <li><a itemprop="url" href="#nav">Jump to Navigation</a></li>
+    <li><a itemprop="url" href="{{site.baseurl}}/{{page.skip-link-1}}">{{page.skip-link-title-1}}</a></li>
+    <li><a itemprop="url" href="{{site.baseurl}}/{{page.skip-link-2}}">{{page.skip-link-title-2}}</a></li>
   </ul>
 
   <div class="parallax parallax-group">
@@ -56,8 +56,8 @@
   </header>
 
     <div class="embed embed-19by6 relative">
-      <img itemprop="image" class="back embed-item" src="{{site.baseurl}}{{page.banner-image}}" alt="">
-      <svg class="w-1 back embed-item" id="triangle-banner" viewBox="0 0 2500 1200" width="2500" height="1200">
+      <img itemprop="image" class="back embed-item {{page.banner-hidden}}" src="{{site.baseurl}}{{page.banner-image}}" alt="">
+      <svg class="w-1 back embed-item {{page.banner-hidden-2}}" id="triangle-banner" viewBox="0 0 2500 1200" width="2500" height="1200">
         <defs>
           <linearGradient id="triangle-gradient" x1="50%" y1="0%" x2="50%" y2="100%" >
             <stop offset="0%" stop-color="#c6858f">
@@ -68,7 +68,7 @@
             </stop>
           </linearGradient>
           <style>
-            .cls-1{fill:none}.cls-2{fill:url('#triangle-gradient')}.cls-3{fill:url(#geo-triangle)}
+            .cls-1{fill:#000}.cls-2{fill:url('#triangle-gradient')}.cls-3{fill:url(#geo-triangle)}
           </style>
           <pattern id="geo-triangle" width="1200" height="1200" patternUnits="userSpaceOnUse" viewBox="0 0 1200 1200">
             <rect width="1200" height="1200" class="cls-1"/>
