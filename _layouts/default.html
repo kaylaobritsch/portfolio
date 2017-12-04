@@ -33,27 +33,27 @@
   </ul>
 
   <div class="parallax parallax-group">
-  <header role="banner">
-    <nav class="front top-nav push-0 gutter pad-t-1-2 pad-b-1-2" id="nav" role="navigation">
-      <div class="grid grid-middle wrapper push-0">
-        <div class="text-left unit xs-1-4">
-          <i class="logo icon i-32">
-            <a itemprop="url" href="{{site.baseurl}}/">
-              <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#kayla-obritsch-logo"></use></svg>
-            </a>
-          </i>
+    <header role="banner">
+      <nav class="top-nav push-0 gutter" id="nav" role="navigation">
+        <div class="grid grid-middle wrapper push-0">
+          <div class="text-left unit xs-1-4">
+            <i class="logo icon i-96">
+              <a itemprop="url" href="{{site.baseurl}}/">
+                <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#kayla-obritsch-2"></use></svg>
+              </a>
+            </i>
+          </div>
+          <div class="text-right unit xs-3-4">
+            <ul class="nav-list list-group-inline push-0">
+              <li><a itemprop="url" class="milli" href="{{site.baseurl}}/#portfolio" {% if page.url == '/#portfolio' %} class="current" {% endif %}>Work</a></li>
+              <li><a itemprop="url" class="milli gutter" href="{{site.baseurl}}/#about" {% if page.url == '/#about' %} class="current" {% endif %}>About</a></li>
+              <li><a itemprop="url" href="mailto:design@kaylaobritsch.ca" class="milli ">Contact</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="text-right unit xs-3-4">
-          <ul class="nav-list list-group-inline push-0">
-            <li><a itemprop="url" class="milli" href="{{site.baseurl}}/#portfolio" {% if page.url == '/#portfolio' %} class="current" {% endif %}>Work</a></li>
-            <li><a itemprop="url" class="milli gutter" href="{{site.baseurl}}/#about" {% if page.url == '/#about' %} class="current" {% endif %}>About</a></li>
-            <li><a itemprop="url" href="mailto:design@kaylaobritsch.ca" class="milli ">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-      <p class="milli side-bar fixed">Portfolio</p>
-    </nav>
-  </header>
+        <p class="milli side-bar fixed">Portfolio</p>
+      </nav>
+    </header>
 
     <div class="embed embed-19by6 relative">
       <img itemprop="image" class="back embed-item {{page.banner-hidden}}" src="{{site.baseurl}}{{page.banner-image}}" alt="">
@@ -61,10 +61,10 @@
         <defs>
           <linearGradient id="triangle-gradient" x1="50%" y1="0%" x2="50%" y2="100%" >
             <stop offset="0%" stop-color="#c6858f">
-            <animate attributeName="stop-color" values="#c6858f; #2c0e1d; #c6858f" dur="4s" repeatCount="indefinite"></animate>
+            <animate attributeName="stop-color" values="#c6858f; #000; #c6858f" dur="6s" repeatCount="indefinite"></animate>
             </stop>
-            <stop offset="100%" stop-color="#2c0e1d">
-             <animate attributeName="stop-color" values="#2c0e1d; #c6858f; #2c0e1d" dur="4s" repeatCount="indefinite"></animate>
+            <stop offset="100%" stop-color="#000">
+             <animate attributeName="stop-color" values="#000; #c6858f; #000" dur="6s" repeatCount="indefinite"></animate>
             </stop>
           </linearGradient>
           <style>
@@ -81,7 +81,7 @@
       <div class="front banner-whole">
         <div class="banner-square">
           <div class="banner-work-text text-center">
-            <h1 itemprop="name" class="front tenamega work push-1-4 pad-t-2 banner-work"><p class="push-0">WO</p><br><p><span class="work-r">R</span><span>K</span></p></h1>
+            <h1 itemprop="name" class="front tenamega work push-1-4 pad-t-2 banner-work"><span class="push-0">WO</span><br><span><span class="work-r">R</span><span>K</span></span></h1>
           </div>
           <div class="banner-text pad-b-1-2 gutter-1-2">
             <h2 itemprop="name" class="banner-sub front push-0">{{page.banner-header}}</h2>
@@ -101,7 +101,7 @@
     <div class="wrapper gutter">
       <div class="pad-t pad-b unit xs-1 s-1 m-1-2 l-1-2">
         <p role="contentinfo" class="micro">© <span itemprop="name">Kayla Obritsch</span> 2017</p>
-        <a class="email-link footer-link milli" itemprop="email" class="milli" href="mailto:design@kaylaobritsch.ca">design@kaylaobritsch.ca</a>
+        <a class="email-link footer-link milli" itemprop="email" href="mailto:design@kaylaobritsch.ca">design@kaylaobritsch.ca</a>
         <p itemprop="address" class="micro" itemscope itemtype="https://schema.org/PostalAddress">
           <span itemprop="addressLocality">Ottawa,</span>
           <span itemprop="addressRegion">Ontario,</span>
@@ -109,24 +109,19 @@
         </p>
       </div>
       <div class="pad-t pad-b unit xs-1 s-1 m-1-2 l-1-2 social-icons">
-        <i class="social-icon i-24 icon inline-block text-">
-          <a itemprop="url" class="social" href="https://instagram.com/kaylaobritsch/">
-            <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#instagram-logo"></use></svg>
-          </a>
-        </i>
         <div class="gutter inline-block">
           <i class="social-icon i-32 icon inline-block">
             <a itemprop="url" class="social" href="https://behance.net/KaylaRoseO">
               <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#behance-logo"></use></svg>
-              </a>
-            </i>
+            </a>
+          </i>
         </div>
-        <div class="inline-block">
+        <div class="gutter inline-block">
           <i class="social-icon i-64 icon inline-block">
             <a itemprop="url" class="social" href="https://github.com/kaylaobritsch">
               <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#github-logo"></use></svg>
-              </a>
-            </i>
+            </a>
+          </i>
         </div>
       </div>
     </div>

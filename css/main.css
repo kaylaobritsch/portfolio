@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #c6858f;
+  --color-primary: #c88691;
   --color-white: #fff;
   --color-light-grey: #cbc4bc;
   --color-dark-grey: #837865;
@@ -17,6 +17,14 @@ html {
 
 p {
   color: var(--color-black);
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h3 {
+  color: var(--color-primary);
 }
 
 /* Add parallax to the banner image */
@@ -59,7 +67,7 @@ body .parallax {
 }
 
 a {
-  color: var(--color-light-grey);
+  color: var(--color-black);
   text-decoration: none;
 }
 
@@ -79,17 +87,14 @@ a:hover {
 }
 
 .logo svg {
-  fill: var(--color-primary);
+  fill: var(--color-black);
   filter: blur(0);
+  position: relative !important;
   transition: all .25s linear;
 }
 
 .logo:hover svg {
-  fill: var(--color-light-grey);
-}
-
-h1 {
-  font-weight: 300;
+  fill: var(--color-primary);
 }
 
 .work {
@@ -98,10 +103,6 @@ h1 {
 
 .banner-square {
   background-color: var(--color-primary);
-}
-
-h3 {
-  color: var(--color-primary);
 }
 
 #triangle-banner {
@@ -113,7 +114,7 @@ h3 {
 }
 
 .banner-whole {
-  margin-top: -2rem;
+  margin-top: -3rem;
   text-align: center;
 }
 
@@ -252,11 +253,13 @@ small {
 
 .social svg {
   fill: var(--color-dark-grey);
+  position: relative !important;
   transition: all .25s linear;
 }
 
-.social svg:hover {
+.social:hover svg {
   fill: var(--color-primary);
+
 }
 
 /* Case Study Page */
