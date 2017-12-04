@@ -380,3 +380,13 @@ small {
   }
 
 }
+
+@-moz-document url-prefix() {
+
+  .back {
+    -webkit-transform: none;
+    transform: none;
+    position: relative;
+    top: 0;
+  }
+}
