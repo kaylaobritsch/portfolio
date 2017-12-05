@@ -75,12 +75,9 @@ a {
   transition: all .25s linear;
 }
 
-a.current {
-  color: var(--color-primary);
-  filter: blur(0);
-}
-
-a:hover {
+a:hover,
+a.current,
+a:focus {
   color: var(--color-primary);
   filter: blur(0);
 }
@@ -154,14 +151,10 @@ a:hover {
 /* Hover box */
 
 .box-fade {
-  background-color: rgba(0, 0, 0, .5);
-  transition: all .4s linear;
-}
-
-.hover-box:hover .box-fade {
   background-color: rgba(0, 0, 0, .4);
   min-height: 85%;
   width: 85%;
+  transition: all .4s linear;
 }
 
 .hover-box-img {
@@ -169,25 +162,16 @@ a:hover {
   transition: all .3s linear;
 }
 
-.hover-box:hover .hover-box-img {
-  transform: scale(1.05);
-}
-
 .hover-box-caption {
-  bottom: 8em;
+  bottom: 2em;
   color: var(--color-white);
-  opacity: 0;
+  opacity: 1;
   z-index: 1001;
   transition: all .4s ease-in;
 }
 
 .hover-box-caption p {
   color: var(--color-white);
-}
-
-.hover-box:hover .hover-box-caption {
-  bottom: 2em;
-  opacity: 1;
 }
 
 .hover-box-title {
@@ -224,7 +208,8 @@ a.email-link {
   transition: all 0.25s ease-in;
 }
 
-a.email-link:hover {
+a.email-link:hover,
+a.email-link:focus {
   color: var(--color-primary);
   background-size: 100% 88%;
 }
@@ -234,7 +219,8 @@ a.email-link.footer-link {
   background-image: linear-gradient(120deg, var(--color-primary) 0%, var(--color-primary) 100%);
 }
 
-a.email-link.footer-link:hover {
+a.email-link.footer-link:hover,
+a.email-link.footer-link:focus {
   color: var(--color-white)
 }
 
@@ -257,9 +243,9 @@ small {
   transition: all .25s linear;
 }
 
-.social:hover svg {
+.social:hover svg,
+.social:focus svg {
   fill: var(--color-primary);
-
 }
 
 /* Case Study Page */
@@ -337,6 +323,35 @@ small {
     bottom: 0;
     position: absolute;
     left: 0;
+  }
+
+  .box-fade {
+    background-color: rgba(0, 0, 0, .6);
+    min-height: 100%;
+    width: 100%;
+  }
+
+  .hover-box:hover .box-fade,
+  .hover-box:focus .box-fade {
+    background-color: rgba(0, 0, 0, .4);
+    min-height: 85%;
+    width: 85%;
+  }
+
+  .hover-box:hover .hover-box-img,
+  .hover-box:focus .hover-box-img {
+    transform: scale(1.05);
+  }
+
+  .hover-box-caption {
+    bottom: 8em;
+    opacity: 0;
+  }
+
+  .hover-box:hover .hover-box-caption,
+  .hover-box:focus .hover-box-caption {
+    bottom: 2em;
+    opacity: 1;
   }
 
   .selfie {
