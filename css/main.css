@@ -234,8 +234,8 @@ footer {
   background-color: var(--color-white);
 }
 
-small {
-  color: var(--color-dark-grey);
+.address {
+  color: var(--color-light-grey) !important;
 }
 
 .social svg {
@@ -279,6 +279,19 @@ small {
 .portfolio-nav-links {
   font-weight: 300;
   text-transform: uppercase;
+}
+
+.btn-ghost {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  border-radius: .5rem;
+  transition: all .3s linear;
+}
+
+.btn-ghost:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 
