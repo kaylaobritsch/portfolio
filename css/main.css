@@ -101,8 +101,8 @@ a:focus {
   background-color: var(--color-primary);
 }
 
-#triangle-banner {
-  height: 1% !important;
+#triangle-banner-2 {
+  background-color: var(--color-black);
 }
 
 .banner-hidden {
@@ -238,7 +238,7 @@ small {
 }
 
 .social svg {
-  fill: var(--color-dark-grey);
+  fill: var(--color-light-grey);
   position: relative !important;
   transition: all .25s linear;
 }
@@ -396,7 +396,7 @@ small {
 
 }
 
-@-moz-document url-prefix() {
+/*@-moz-document url-prefix() {
 
   .back {
     -webkit-transform: none;
@@ -404,4 +404,4 @@ small {
     position: relative;
     top: 0;
   }
-}
+}*/
