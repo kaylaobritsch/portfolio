@@ -103,6 +103,7 @@ a:focus {
 
 #triangle-banner-2 {
   background-color: var(--color-black);
+  width: 112%;
 }
 
 .banner-hidden {
