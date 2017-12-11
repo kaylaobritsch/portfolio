@@ -27,6 +27,16 @@ h3 {
   color: var(--color-primary);
 }
 
+.coffee {
+  margin-top: -95px;
+  z-index: 10;
+}
+
+.coffee-img {
+  width: 100px;
+  height: auto;
+}
+
 /* Add parallax to the banner image */
 
 .parallax {
@@ -52,7 +62,7 @@ h3 {
 
 .front {
   position: relative;
-  z-index: 10;
+  z-index: 1000;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
@@ -63,6 +73,7 @@ h3 {
   -webkit-box-shadow: 0px 10px 30px -6px rgba(44,14,29,0.63);
   -moz-box-shadow: 0px 10px 30px -6px rgba(44,14,29,0.63);
   box-shadow: 0px 10px 30px -6px rgba(44,14,29,0.63);
+  z-index: 1000;
 }
 
 a {
