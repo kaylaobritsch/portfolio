@@ -1,5 +1,6 @@
 :root {
   --color-primary: #c88691;
+  --color-secondary: #a2708c;
   --color-white: #fff;
   --color-light-grey: #cbc4bc;
   --color-dark-grey: #837865;
@@ -27,15 +28,15 @@ h3 {
   color: var(--color-primary);
 }
 
-.coffee {
-  margin-top: -95px;
+/*.coffee {
+  margin-top: -99.9px;
   z-index: 10;
 }
 
 .coffee-img {
   width: 100px;
   height: auto;
-}
+}*/
 
 /* Add parallax to the banner image */
 
@@ -122,14 +123,14 @@ a:focus {
 }
 
 .banner-whole {
-  margin-top: -3rem;
+  margin-top: -5rem;
   text-align: center;
 }
 
 .banner-text {
   color: var(--color-white);
-  font-family: "Bebas", sans-serif;
   display: inline-block;
+  font-family: "Bebas", sans-serif;
 }
 
 .banner-work {
@@ -175,7 +176,6 @@ a:focus {
 }
 
 .hover-box-caption {
-  bottom: 2em;
   color: var(--color-white);
   opacity: 1;
   z-index: 1001;
@@ -184,6 +184,11 @@ a:focus {
 
 .hover-box-caption p {
   color: var(--color-white);
+}
+
+.hover-box-text-wrapper {
+  min-height: 85%;
+  width: 85%;
 }
 
 .hover-box-title {
@@ -198,11 +203,7 @@ a:focus {
 
 .about-section {
   color: var(--color-white);
-  background-color: var(--color-primary);
-}
-
-.about-section h3 {
-  color: var(--color-white);
+  background-color: #eee;
 }
 
 .selfie {
@@ -212,8 +213,8 @@ a:focus {
 }
 
 a.email-link {
-  color: var(--color-white);
-  background-image: linear-gradient(120deg, var(--color-black) 0%, var(--color-black) 100%);
+  color: var(--color-black);
+  background-image: linear-gradient(120deg, var(--color-primary) 0%, var(--color-primary) 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.25em;
   background-position: 0 90%;
@@ -222,18 +223,8 @@ a.email-link {
 
 a.email-link:hover,
 a.email-link:focus {
-  color: var(--color-primary);
+  color: var(--color-white);
   background-size: 100% 88%;
-}
-
-a.email-link.footer-link {
-  color: var(--color-black);
-  background-image: linear-gradient(120deg, var(--color-primary) 0%, var(--color-primary) 100%);
-}
-
-a.email-link.footer-link:hover,
-a.email-link.footer-link:focus {
-  color: var(--color-white)
 }
 
 .social-icons, small {
@@ -275,6 +266,13 @@ footer {
   background-color: #eee;
 }
 
+.design-section {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 36em;
+  width: 100%;
+}
+
 .sketch {
   mix-blend-mode: multiply;
 }
@@ -305,6 +303,20 @@ footer {
   border-color: var(--color-primary);
 }
 
+.video {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+}
+
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 
 @media only screen and (min-width: 38em) {
 
@@ -321,8 +333,10 @@ footer {
 @media only screen and (min-width: 60em) {
 
   .banner-whole {
-    left: 50%;
+    margin-top: 0;
+
     position: absolute;
+    left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
@@ -350,6 +364,10 @@ footer {
     left: 0;
   }
 
+  .banner-work {
+    display: inline-block;
+  }
+
   .box-fade {
     background-color: rgba(0, 0, 0, .6);
     min-height: 100%;
@@ -369,13 +387,13 @@ footer {
   }
 
   .hover-box-caption {
-    bottom: 8em;
+    bottom: -3em;
     opacity: 0;
   }
 
   .hover-box:hover .hover-box-caption,
   .hover-box:focus .hover-box-caption {
-    bottom: 2em;
+    bottom: 0;
     opacity: 1;
   }
 
@@ -413,6 +431,10 @@ footer {
 
   .design-section {
    margin-top: -100vh;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 100%;
+   width: 100%;
   }
 
   .image-section {
@@ -420,13 +442,3 @@ footer {
   }
 
 }
-
-/*@-moz-document url-prefix() {
-
-  .back {
-    -webkit-transform: none;
-    transform: none;
-    position: relative;
-    top: 0;
-  }
-}*/
