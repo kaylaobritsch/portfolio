@@ -6,13 +6,16 @@
   --color-dark-grey: #837865;
   --color-black: #2c0e1d;
 
-  --font-primary: "Lato", sans-serif;
+  --font-primary: "lato", sans-serif;
 }
 
 html {
   color: var(--color-black);
-  font-family: var(--font-primary);
   overflow-x: hidden;
+}
+
+.fonts-loaded {
+  font-family: var(--font-primary);
 }
 
 p {
