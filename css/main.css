@@ -11,11 +11,8 @@
 
 html {
   color: var(--color-black);
-  overflow-x: hidden;
-}
-
-.fonts-loaded {
   font-family: var(--font-primary);
+  overflow-x: hidden;
 }
 
 p {
