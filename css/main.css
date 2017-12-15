@@ -79,10 +79,9 @@ h3 {
 a {
   color: var(--color-black);
   text-decoration: none;
-}
+  padding-top: 0;
+  margin-top: 0;
 
-.nav-list a {
-  filter: blur(.6px);
   transition: all .25s linear;
 }
 
@@ -90,12 +89,10 @@ a:hover,
 a.current,
 a:focus {
   color: var(--color-primary);
-  filter: blur(0);
 }
 
 .logo svg {
   fill: var(--color-black);
-  filter: blur(0);
   position: relative !important;
   transition: all .25s linear;
 }
