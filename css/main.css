@@ -12,7 +12,7 @@
 html {
   color: var(--color-black);
   font-family: var(--font-primary);
-  overflow-x: hidden;
+  overflow: visible;
 }
 
 p {
@@ -46,6 +46,8 @@ h3 {
   -webkit-overflow-scrolling: touch;
   -webkit-perspective: 1px;
   perspective: 1px;
+
+  scroll-behavior: smooth;
 }
 
 .parallax-group {

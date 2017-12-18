@@ -1,1 +1,1 @@
-$('#nav').localScroll();
+$('.nav').localScroll();
