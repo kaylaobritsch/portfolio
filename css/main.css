@@ -12,7 +12,7 @@
 html {
   color: var(--color-black);
   font-family: var(--font-primary);
-  overflow: visible;
+  overflow: scroll;
 }
 
 p {
@@ -42,12 +42,12 @@ h3 {
 .parallax {
   height: 100vh;
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: visible;
   -webkit-overflow-scrolling: touch;
   -webkit-perspective: 1px;
   perspective: 1px;
 
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 .parallax-group {
