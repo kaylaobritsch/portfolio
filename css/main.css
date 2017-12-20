@@ -116,6 +116,10 @@ a:focus {
   width: 111%;
 }
 
+.banner {
+  height: 1250px;
+}
+
 .banner-hidden {
   display: none;
 }
@@ -123,6 +127,10 @@ a:focus {
 .banner-whole {
   margin-top: -5rem;
   text-align: center;
+}
+
+.banner-whole p {
+  color: var(--color-white);
 }
 
 .banner-text {
@@ -330,7 +338,8 @@ footer {
 @media only screen and (min-width: 60em) {
 
   .banner-whole {
-    margin-top: 0;
+    margin-top: 3;
+    text-align: left;
 
     position: absolute;
     left: 50%;
@@ -359,7 +368,7 @@ footer {
     bottom: 0;
     position: absolute;
     left: 0;
-  }
+}
 
   .banner-work {
     display: inline-block;

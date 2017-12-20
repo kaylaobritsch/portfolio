@@ -14,3 +14,11 @@ $('a[href*="#"]').click(function() {
         }
     }
 });
+
+$("#js-flip").Morphext ({
+    animation: "flipInX",
+    separator: ",",
+    speed: 1500,
+    complete: function () {
+    }
+});
