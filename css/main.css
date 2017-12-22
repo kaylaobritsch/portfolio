@@ -109,15 +109,12 @@ a:focus {
 
 .banner-square {
   background-color: var(--color-primary);
+  z-index: 2500;
 }
 
 #triangle-banner-2 {
   background-color: var(--color-black);
   width: 111%;
-}
-
-.banner {
-  height: 1250px;
 }
 
 .banner-hidden {
@@ -161,14 +158,8 @@ a:focus {
   font-weight: 300;
 }
 
-.side-bar {
-  display: none;
-  color: var(--color-white);
-  letter-spacing: 5px;
-  transform: rotate(-90deg);
-  transform-origin: left top 0;
-  top: 50%;
-  left: .5rem;
+main {
+  margin-top: 2rem;
 }
 
 /* Hover box */
@@ -341,8 +332,12 @@ footer {
 
 @media only screen and (min-width: 60em) {
 
+  .banner-wrapper {
+    margin-top: -2rem;
+  }
+
   .banner-whole {
-    margin-top: 3;
+    margin-top: 0;
     text-align: left;
 
     position: absolute;
@@ -376,6 +371,10 @@ footer {
 
   .banner-work {
     display: inline-block;
+  }
+
+  main {
+    margin-top: 0;
   }
 
   .box-fade {
