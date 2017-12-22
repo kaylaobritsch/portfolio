@@ -15,10 +15,10 @@ $('a[href*="#"]').click(function() {
     }
 });
 
-$("#js-flip").Morphext ({
+$("#js-rotating").Morphext({
     animation: "flipInX",
     separator: ",",
-    speed: 1500,
+    speed: 2000,
     complete: function () {
     }
 });
