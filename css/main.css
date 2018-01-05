@@ -93,6 +93,10 @@ a:focus {
   color: var(--color-primary);
 }
 
+.logo {
+  animation: blurIn .75s linear;
+}
+
 .logo svg {
   fill: var(--color-black);
   position: relative !important;
@@ -318,6 +322,32 @@ footer {
 	height: 100%;
 }
 
+.not-found {
+  color: var(--color-primary);
+}
+
+.not-found-section {
+  background-color: var(--color-white);
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  animation-name: flipInX;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  animation-duration: .75s;
+}
+
 .morphext > .animated {
     display: inline-block;
 }
@@ -454,4 +484,42 @@ footer {
    background-color: var(--color-white);
   }
 
+}
+
+@keyframes blurIn {
+  from {
+    filter: blur(0px);
+    opacity: 0;
+  }
+
+  to {
+    filter: blur(1px);
+    opacity: 0;
+  }
+}
+
+@keyframes flipInX {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
 }
