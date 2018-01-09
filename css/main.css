@@ -27,16 +27,6 @@ h3 {
   color: var(--color-primary);
 }
 
-/*.coffee {
-  margin-top: -99.9px;
-  z-index: 10;
-}
-
-.coffee-img {
-  width: 100px;
-  height: auto;
-}*/
-
 /* Add parallax to the banner image */
 
 .parallax {
@@ -80,8 +70,9 @@ h3 {
 
 a {
   color: var(--color-black);
-  text-decoration: none;
+  border-top: solid 0px;
   padding-top: 0;
+  text-decoration: none;
   margin-top: 0;
 
   transition: all .25s linear;
@@ -92,6 +83,16 @@ a.current,
 a:focus {
   color: var(--color-primary);
 }
+
+/* .blur a {
+  filter: blur(.75px);
+  transition: all .25s linear;
+}
+
+.blur a:hover,
+.blur a:focus {
+  filter: blur(0px);
+} */
 
 .logo {
   animation: blurIn .75s linear;
@@ -326,6 +327,10 @@ footer {
   color: var(--color-primary);
 }
 
+.not-found-sub {
+  color: var(--color-dark-grey);
+}
+
 .not-found-section {
   background-color: var(--color-white);
 }
@@ -488,13 +493,13 @@ footer {
 
 @keyframes blurIn {
   from {
-    filter: blur(0px);
+    filter: blur(.10px);
     opacity: 0;
   }
 
   to {
     filter: blur(1px);
-    opacity: 0;
+    opacity: 1;
   }
 }
 
