@@ -20,7 +20,11 @@ p {
 }
 
 h1 {
-  font-weight: 300;
+  font-weight: 600;
+}
+
+h1 {
+  font-weight: 400;
 }
 
 h3 {
