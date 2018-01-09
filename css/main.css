@@ -25,6 +25,7 @@ h1 {
 
 h3 {
   color: var(--color-primary);
+  font-weight: 400;
 }
 
 /* Add parallax to the banner image */
@@ -59,6 +60,10 @@ h3 {
   transform: translateZ(0);
 }
 
+main {
+  margin-top: 2rem;
+}
+
 .top-nav {
   background-color: var(--color-white);
 
@@ -69,43 +74,45 @@ h3 {
 }
 
 a {
-  color: var(--color-black);
+  color: var(--color-primary);
   border-top: solid 0px;
   padding-top: 0;
   text-decoration: none;
   margin-top: 0;
 
-  transition: all .25s linear;
+  transition: color .25s linear;
 }
 
 a:hover,
 a.current,
 a:focus {
-  color: var(--color-primary);
+  color: var(--color-black);
 }
 
-/* .blur a {
-  filter: blur(.75px);
+.blur:hover li a,
+.blur:focus li a {
+	filter: blur(1.2px);
+  transition: color .25s linear;
+}
+
+.blur li a:hover,
+.blur li a:focus {
+	filter: blur(0px);
+}
+
+.logo {
   transition: all .25s linear;
 }
 
-.blur a:hover,
-.blur a:focus {
-  filter: blur(0px);
-} */
-
-.logo {
-  animation: blurIn .75s linear;
-}
-
 .logo svg {
-  fill: var(--color-black);
+  fill: var(--color-primary);
+  filter: blur(0px);
   position: relative !important;
   transition: all .25s linear;
 }
 
 .logo:hover svg {
-  fill: var(--color-primary);
+  fill: var(--color-black);
 }
 
 .work {
@@ -161,10 +168,6 @@ a:focus {
 
 .banner-sub {
   font-weight: 300;
-}
-
-main {
-  margin-top: 2rem;
 }
 
 /* Hover box */
@@ -260,7 +263,7 @@ footer {
 /* Case Study Page */
 
 .portfolio-info {
-  color: var(--color-dark-grey);
+  color: var(--color-primary);
   background-color: white;
 }
 
@@ -309,18 +312,25 @@ footer {
   border-color: var(--color-primary);
 }
 
+.btn-section {
+  background-color: var(--color-white);
+}
+
 .video {
-	position: relative;
-	padding-bottom: 56.25%;
-	height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
 }
 
 .video iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+  background-color: var(--color-white);
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .not-found {
@@ -413,7 +423,7 @@ footer {
   }
 
   main {
-    margin-top: 0;
+    margin-top: -4rem;
   }
 
   .box-fade {
@@ -449,21 +459,6 @@ footer {
     max-width: 100%;
   }
 
-  .logo-sticky {
-    text-align: left;
-    position: sticky;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    max-width: 13em;
-
-    margin-left: 0;
-    margin-right: 0;
-
-    z-index: 1000;
- }
-
   .mockup-section {
    height: 100vh;
    overflow: hidden;
@@ -491,15 +486,21 @@ footer {
 
 }
 
-@keyframes blurIn {
-  from {
-    filter: blur(.10px);
-    opacity: 0;
-  }
+@media only screen and (min-width: 75em) {
 
-  to {
-    filter: blur(1px);
-    opacity: 1;
+  .logo-sticky {
+    text-align: left;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    max-width: 13em;
+
+    margin-left: 0;
+    margin-right: 0;
+
+    z-index: 1000;
   }
 }
 

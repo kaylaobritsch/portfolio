@@ -2,15 +2,14 @@
 
 #### [☛ kaylaobritsch.ca](https://kaylaobritsch.ca)
 
-<!--- Add my logo here when finished --->
+![](kayla-obritsch-logo.png)
 
 Kayla Obritsch
 
 I'm Sayin' It
+I want to design innovative digital experiences fueled from a powerful inner question: Where can I get more coffee? I am obsessed with the subtle details and creating an exciting experience for the user.
 
-I want to design innovative digital experiences fueled from a powerful inner question: Where can I get more coffee? I am obsessed with the subtle details and creating an exciting experience for the user. Currently I get my coffee fix staying up late ??? .
-
-
+Contact me and let's get started.
 
 - **[design@kaylaobritsch.ca](mailto:design@kaylaobritsch.ca)**
 - [Github](https://github.com/kaylaobritsch)
