@@ -307,6 +307,10 @@ footer {
   overflow: hidden;
 }
 
+iframe {
+  border: none;
+}
+
 .video iframe {
   background-color: var(--color-white);
   position: absolute;
