@@ -14,7 +14,7 @@ Contact me and let's get started.
 - **[design@kaylaobritsch.ca](mailto:design@kaylaobritsch.ca)**
 - [Github](https://github.com/kaylaobritsch)
 - [Behance](https://www.behance.net/KaylaRoseO)
-- [Instagram](https://www.instagram.com/kaylaobritsch/)
+- [Vimeo](https://vimeo.com/user57210739)
 
 ---
 
