@@ -1,7 +1,6 @@
 :root {
   --color-primary: #c88691;
-  --color-secondary: #a2708c;
-  --color-white: #fff;
+  --color-white: #ffffff;
   --color-light-grey: #cbc4bc;
   --color-dark-grey: #837865;
   --color-black: #2c0e1d;
@@ -37,7 +36,7 @@ h3 {
 .parallax {
   height: 100vh;
   overflow-y: auto;
-  overflow-x: visible;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   -webkit-perspective: 1px;
   perspective: 1px;
