@@ -2,7 +2,7 @@
 
 #### [☛ kaylaobritsch.ca](https://kaylaobritsch.ca)
 
-![](kayla-obritsch-logo.png)
+![](kayla.jpg)
 
 Kayla Obritsch
 
