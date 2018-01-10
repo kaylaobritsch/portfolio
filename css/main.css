@@ -35,39 +35,6 @@ h3 {
   font-weight: 400;
 }
 
-/* Add parallax to the banner image */
-
-.parallax {
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-  -webkit-perspective: 1px;
-  perspective: 1px;
-
-  /* scroll-behavior: smooth; */
-}
-
-.parallax-group {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.back {
-  -webkit-transform: translateZ(-1px) scale(2);
-  transform: translateZ(-1px) scale(2);
-  position: relative;
-  overflow-x: hidden;
-  top: calc(((100vh - 50.10vw) / 4) * -2);
-}
-
-.front {
-  position: relative;
-  z-index: 1000;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-}
-
 main {
   margin-top: 2rem;
 }
@@ -176,6 +143,13 @@ a:focus {
 
 .banner-sub {
   font-weight: 300;
+}
+
+.front {
+  position: relative;
+  z-index: 1000;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 /* Hover box */
@@ -389,6 +363,32 @@ footer {
 }
 
 @media only screen and (min-width: 60em) {
+
+  /* Add parallax to the banner image */
+
+  .parallax {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+
+    /* scroll-behavior: smooth; */
+  }
+
+  .parallax-group {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .back {
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+    position: relative;
+    overflow-x: hidden;
+    top: calc(((100vh - 50.10vw) / 4) * -2);
+  }
 
   .banner-wrapper {
     margin-top: -2rem;
