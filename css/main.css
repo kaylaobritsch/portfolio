@@ -299,7 +299,7 @@ footer {
 }
 
 .portfolio-nav-links {
-  background-color: var(--color-white);
+  background-color: var(--color-white) !important;
   font-weight: 300;
   text-transform: uppercase;
 }
