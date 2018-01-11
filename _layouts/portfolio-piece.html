@@ -18,7 +18,7 @@ banner-header: {{page.banner-header}}
       <img itemprop="image" class="img-flex" src="{{site.baseurl}}{{page.logo}}" alt="{{page.logo}}">
     </i>
   </div>
-  
+
   <section class="intro-section max-length gutter pad-t pad-b-2">
     <p>{{page.opening-text}}</p>
   </section>
@@ -33,11 +33,11 @@ banner-header: {{page.banner-header}}
   </section>
 
   <section class="relative wrapper">
-    <div class="mockup-section grid grid-middle wrapper gutter pad-t pad-b-2">
-      <img itemprop="image" class="unit xs-1 s-1 m-1 l-1-2 img-flex" src="{{site.baseurl}}{{page.mockup}}" alt="{{page.mockup-alt}}">
+    <div class="mockup-section design-waypoint grid grid-middle wrapper gutter pad-t pad-b-2">
+      <img itemprop="image" class="mockup-animate unit xs-1 s-1 m-1 l-1-2 img-flex" src="{{site.baseurl}}{{page.mockup}}" alt="{{page.mockup-alt}}">
     </div>
 
-    <section class="design-section grid grid-middle pad-t pad-b-2" id="design">
+    <section class="design-section grid grid-middle pad-t" id="design">
       <div class="unit xs-1 s-1 m-1 l-1-2"></div>
       <div class="unit xs-1 s-1 m-1 l-1-2 design gutter">
         <h2 class="push-1-4">Visual Design</h2>
@@ -109,13 +109,13 @@ banner-header: {{page.banner-header}}
       </div>
     </section>
 
-  {{content}}
+    {{content}}
 
-  <div class="portfolio-nav-links text-center">
-    <a class="micro inline" href="{{site.baseurl}}{{page.previous}}">Prev</a>
-    <p class="milli inline">/</p>
-    <a class="micro inline" href="{{site.baseurl}}{{page.next}}">Next</a>
-  </div>
+    <div class="portfolio-nav-links text-center">
+      <a class="micro inline" href="{{site.baseurl}}{{page.previous}}">Prev</a>
+      <p class="milli inline">/</p>
+      <a class="micro inline" href="{{site.baseurl}}{{page.next}}">Next</a>
+    </div>
 
   </section>
 </section>

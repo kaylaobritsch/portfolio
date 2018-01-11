@@ -22,3 +22,17 @@ $("#js-rotating").Morphext({
     complete: function () {
     }
 });
+
+var $design = $('.design-waypoint');
+var $mockup = $('.mockup-animate');
+
+
+$design.waypoint(function (direction) {
+  if (direction == 'down') {
+    $mockup.addClass('js-mockup-animate')
+  }
+
+  if (direction == 'up') {
+    $mockup.removeClass('js-mockup-animate')
+  }
+}, { offset: '25%', context: '.parallax' });
