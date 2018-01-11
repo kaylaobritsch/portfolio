@@ -12,6 +12,7 @@ html {
   color: var(--color-black);
   font-family: var(--font-primary);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
