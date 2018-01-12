@@ -1,0 +1,3 @@
+Kaylaobritsch.ca was designed & hand coded by Kayla Obritsch using GitHub, Markdown and Jekyll.
+
+All images and mockups used were found under the royalty free license.
