@@ -34,6 +34,14 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
+
+  <ul class="nav skip-links">
+    <li><a itemprop="url" href="{{site.baseurl}}/#main">Jump to Main Content</a></li>
+    <li><a itemprop="url" href="{{site.baseurl}}/#nav">Jump to Navigation</a></li>
+    <li><a itemprop="url" href="{{site.baseurl}}/{{page.skip-link-1}}">{{page.skip-link-title-1}}</a></li>
+    <li><a itemprop="url" href="{{site.baseurl}}/{{page.skip-link-2}}">{{page.skip-link-title-2}}</a></li>
+  </ul>
+  
   <div class="parallax parallax-group">
     <header role="banner">
       <nav class="front top-nav push-0 gutter" id="nav" role="navigation">
