@@ -18,6 +18,10 @@ html {
   color: var(--color-white);
 }
 
+.skip-links:hover {
+  color: var(--color-white);
+}
+
 body {
   overflow-x: hidden;
 }
