@@ -18,7 +18,8 @@ html {
   color: var(--color-white);
 }
 
-.skip-links:hover {
+.skip-links:hover,
+.skip-links:focus {
   color: var(--color-white);
 }
 
