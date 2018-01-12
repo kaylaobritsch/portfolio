@@ -14,15 +14,6 @@ html {
   overflow-x: hidden;
 }
 
-.skip-links {
-  color: var(--color-white);
-}
-
-.skip-links:hover,
-.skip-links:focus {
-  color: var(--color-white);
-}
-
 body {
   overflow-x: hidden;
 }
@@ -71,6 +62,15 @@ a:hover,
 a.current,
 a:focus {
   color: var(--color-black);
+}
+
+.skip-links a {
+  color: var(--color-white);
+}
+
+.skip-links:hover a,
+.skip-links:focus a {
+  color: var(--color-white);
 }
 
 .blur:hover li a,
